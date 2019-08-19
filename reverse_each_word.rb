@@ -1,8 +1,6 @@
 def reverse_each_word(sentence)
   s_array = sentence.split
-  count = 0
   s_array.map do |word|
-    s_array[0] = word.reverse
-    count += 1
+    s_array[s_array.index(word)] = word.reverse
   end
 end
